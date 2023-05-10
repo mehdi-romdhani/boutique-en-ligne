@@ -1,0 +1,118 @@
+/*******************************ROOT*******************************/
+
+:root {
+  --color: #ff5400;
+  --color-link-hover: #ffa700;
+  --color-very-light: #b7b7b7;
+  --color-light: #999;
+  --color-medium-light: #6d6d6d;
+  --color-medium: #3d3d3d;
+  --color-medium-dark: #323232;
+  --color-dark: #272727;
+  --color-very-dark: #1d1d1d;
+  --color-ultra-dark: #101010;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/******************* CART MAIN ********************/
+body {
+  background-color: var(--color-dark);
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* justify-content: center; */
+  padding: 10px;
+  margin: 10px;
+  /* border: 1px solid blue; */
+}
+
+.container-title h1 {
+  color: white;
+}
+
+.container-form-shipping {
+  /* background-color: #FFFFFF; */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 50px auto;
+  max-width: 600px;
+  /* border: 1px solid blue; */
+}
+
+.container-form-shipping input[type="text"] {
+  background-color: var(--color-very-dark);
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fcfcfc;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.container-form-shipping label {
+  color: #333333;
+  display: none;
+}
+
+.container-form-shipping button[type="submit"] {
+  display: inline-block;
+  background-color: var(--color);
+  color: var(--color-dark);
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.container-form-shipping button[type="submit"]:hover {
+  /* background-color: red; */
+  cursor: pointer;
+}
+#mess_form_ship {
+  display: flex;
+  color: #ff5400;
+  padding: 5px;
+  margin: 5px;
+}
+
+#mess_form {
+  display: flex;
+  color: #ff5400;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#shipHR {
+  display: flex;
+  height: 2px;
+  background-color: var(--color);
+  width: 50%;
+  margin-top: 15px;
+}
+
+#payeship{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#payeship:hover{
+    color: #ff5400;
+}

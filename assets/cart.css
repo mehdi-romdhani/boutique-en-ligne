@@ -1,0 +1,330 @@
+/*******************************ROOT*******************************/
+
+:root {
+  --color: #ff5400;
+  --color-link-hover: #ffa700;
+  --color-very-light: #b7b7b7;
+  --color-light: #999;
+  --color-medium-light: #6d6d6d;
+  --color-medium: #3d3d3d;
+  --color-medium-dark: #323232;
+  --color-dark: #272727;
+  --color-very-dark: #1d1d1d;
+  --color-ultra-dark: #101010;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/******************* CART MAIN ********************/
+body {
+  background-color: var(--color-dark);
+}
+
+.cartEmpty,
+.paraCartEmpty{
+  color:white;
+  margin: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Container */
+  .container-cart {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid blue; */
+    padding: 10px;
+  }
+
+  /* Titre */
+  .container-cart h2 {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    color: white;
+  }
+
+  /* Article */
+  .oneGameCart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    /* border-radius: 5px; */
+    background-color: var(--color-medium-dark);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Image */
+  .oneGameCart img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+
+  /* Détails de l'article */
+  .divGameNotImage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    color: white;
+  }
+
+  #hre {
+    margin-bottom: 15px;
+    color: #ff5400;
+  }
+
+  .priceBuy button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .priceBuy button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .priceBuy .price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    color: var(--color-light);
+  }
+
+  .priceBuy .price p:last-of-type {
+    font-weight: bold;
+    color: white;
+  }
+  #quantiteNum {
+    margin-left: 3px;
+  }
+
+  /* Plateforme et bouton supprimer */
+  .platformDelete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+  }
+
+  .platformDelete p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-light);
+  }
+
+  .platformDelete button {
+    background-color: transparent;
+    color: var(--color-light);
+    border: none;
+    cursor: pointer;
+  }
+
+  .platformDelete button:hover {
+    color: var(--color-lighter);
+  }
+
+  /* Prix et quantité */
+  .priceQuantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+  }
+
+  .priceQuantity p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-light);
+  }
+
+  .priceQuantity button {
+    background-color: transparent;
+    color: var(--color-light);
+    border: none;
+    cursor: pointer;
+  }
+
+  .priceQuantity button:hover {
+    color: var(--color-lighter);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Container */
+  .container-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: var(--color-dark);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Titre */
+  .container-cart h2 {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  /* Article */
+  .oneGameCart {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color-medium-dark);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Image */
+  .oneGameCart img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  /* Détails de l'article */
+  .divGameNotImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
+
+  #hre {
+    margin-bottom: 15px;
+    color: #ff5400;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #hre:hover {
+    text-decoration: underline;
+  }
+
+  .priceBuy button {
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  .priceBuy button:hover{
+    color: green;
+    cursor:pointer;
+  }
+
+  .priceBuy .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--color-light);
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .priceBuy .price p:last-of-type {
+    font-weight: bold;
+    color: white;
+    font-size: 28px;
+  }
+
+  #quantiteNum {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  /* Plateforme et bouton supprimer */
+  /* Plateforme et bouton supprimer */
+  .platformDelete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+  }
+
+  .platformDelete p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-light);
+  }
+
+  .platformDelete button {
+    background-color: transparent;
+    color: var(--color-light);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .platformDelete button:hover {
+    color: var(--color-lighter);
+  }
+
+  /* Prix et quantité */
+  .priceQuantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+  }
+
+  .priceQuantity p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-light);
+  }
+
+  .priceQuantity button {
+    background-color: transparent;
+    color: var(--color-light);
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .priceQuantity button:hover {
+    color: var(--color-lighter);
+  }
+}
+

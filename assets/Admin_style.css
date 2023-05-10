@@ -1,0 +1,603 @@
+
+/*******************************ROOT*******************************/
+
+:root {
+    --color: #ff5400;
+    --color-link-hover: #ffa700;
+    --color-very-light: #b7b7b7;
+    --color-light: #999;
+    --color-medium-light: #6d6d6d;
+    --color-medium: #3d3d3d;
+    --color-medium-dark: #323232;
+    --color-dark: #272727;
+    --color-very-dark: #1d1d1d;
+    --color-ultra-dark: #101010;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+  
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color:var(--color-dark);
+}
+
+/*************** MAIN *****************/
+#form-insert-plateform,
+#form-insert-category{
+    box-shadow: 0 0 5px var(--color-medium-light); 
+        border-radius: 10px;
+        padding: 10px;
+}
+.container-table-plat,
+.container-title-category,
+.container-table-cat{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-add-show{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+.form-add-category,
+.form-add-plateform{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container-dash-admin {
+    padding: 20px;
+    margin: 20px 0;
+}
+.container-user-man,
+.container-pro-stock,
+.container-title,
+.container-btn-plateforme,
+.container-btn-category,
+.container-sub-form {
+    padding: 20px;
+    margin: 20px 0;
+    
+}
+
+.container-mess-plateform,
+.container-mess-cat {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 0;
+    color: white;
+}
+
+h3, h4 {
+    font-size: 24px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+
+/*************** FORMS ******************/
+
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+} 
+
+button[type="submit"], .button {
+    background-color:var(--color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 25px;
+    
+}
+
+button[type="submit"]:hover, .button:hover {
+    background-color:#3e8e41;
+}
+
+/* Tables */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    }
+    
+    th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    #tb_cat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    
+    #rowcat1{
+    display:flex; flex-direction:column;
+    }
+    #rowcat2{
+    display:flex; flex-direction:column; border:1px solid pink"
+    }
+    
+    #linksubcat{
+    margin-top: 30px ;
+    color: green;
+    text-decoration: none;
+    }
+    
+    #insert_cat{
+    margin-top: 15px ;
+    color: green;
+    text-decoration: none;
+    }
+    
+    #del-plat{
+    margin-top: 25px;
+    }
+    
+    button,
+    input,
+    table, select{
+    padding-left: 25px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+    table {
+    border: 0;
+    }
+    
+    tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    }
+    
+    td {
+    border-bottom: 0;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    }
+    
+    td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    }
+
+
+select {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: white;
+  }
+  #role{
+    margin-bottom: 1cm;  }
+  
+  select:hover {
+    border-color: #aaa;
+  }
+  
+  select:focus {
+    border-color: #555;
+  }
+  
+  select option {
+    font-size: 16px;
+    color: #333;
+    background-color: white;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+
+  .infoUser{
+    background-color:var(--color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+
+  .supprUser{
+    background-color:red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+
+
+
+#submitGame{
+    background-color:var(--color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 25px;
+    width: 45vw;
+    
+}
+
+
+
+.div_place_game {
+width: 100%;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+box-sizing: border-box;
+border-bottom: 1px solid var(--color);
+}
+
+.image_game {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.title_game {
+font-size: 24px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+
+.desc_game {
+font-size: 16px;
+margin-top: 5px;
+margin-bottom: 10px;
+color: white;
+}
+
+.price_game {
+font-size: 20px;
+font-weight: bold;
+margin-top: 10px;
+color: var(--color);
+}
+
+.platform_game {
+font-size: 16px;
+margin-right: 10px;
+margin-bottom: 10px;
+display: inline-block;
+color: var(--color-very-light);
+
+}
+
+.button_update {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #0077c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button_delete {
+    font-size: 14px;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+
+.update_place {
+margin-top: 10px;
+}
+
+
+  
+/* Styles pour mobile */
+
+
+/* Styles pour tablette */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #placeAddGame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+
+    #placeAddGame form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 0 5px var(--color-medium-light); /* Add box shadow */
+        border-radius: 10px;
+    }
+
+    #placeAddGame label {
+        width: 45%;
+        margin-top: 10px;
+        margin-right: 10%;
+        margin-bottom: 10px;
+    }
+
+    #placeAddGame input[type="text"],
+    #placeAddGame input[type="number"],
+    #placeAddGame input[type="date"],
+    #placeAddGame textarea,
+    #placeAddGame select {
+        width: 50%;
+    }
+    #placeAddGame input[type="checkbox"] {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Styles pour laptop */
+
+@media (min-width: 992px) {
+
+    #placeAddGame {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        /* margin-bottom: 30px; */
+        padding-left: 15px;
+    }
+
+    #placeAddGame form {
+        padding:30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 0 5px var(--color-medium-light); /* Add box shadow */
+        border-radius: 10px;
+    }
+
+    #placeAddGame label {
+        width: 45%;
+        margin-top: 10px;
+        margin-right: 10%;
+        margin-bottom: 10px;
+    }
+
+    #placeAddGame input[type="text"],
+    #placeAddGame input[type="number"],
+    #placeAddGame input[type="date"],
+    #placeAddGame textarea,
+    #placeAddGame select {
+        width: 50%;
+    }
+    #placeAddGame input[type="checkbox"] {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .placeAddGame{
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+.div_place_game {
+    padding: 10px;
+    
+}
+
+.title_game {
+    font-size: 20px;
+}
+
+.desc_game {
+    font-size: 14px;
+    color: white;
+}
+
+.price_game {
+    font-size: 18px;
+    color: var(--color);
+}
+
+.platform_game {
+    font-size: 14px;
+    color: var(--color-very-light);
+
+}
+
+.button_update {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #0077c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button_delete {
+    font-size: 14px;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+
+  }
+  #placeAddGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 15px;
+}
+
+#placeAddGame form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 5px var(--color-medium-light); /* Add box shadow */
+    border-radius: 10px;
+}
+
+#placeAddGame label {
+    width: 45%;
+    margin-top: 30px;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+#placeAddGame input[type="text"],
+#placeAddGame input[type="number"],
+#placeAddGame input[type="date"],
+#placeAddGame textarea,
+#placeAddGame select {
+    width: 50%;
+}
+#placeAddGame input[type="checkbox"] {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#placeAddGame input[type="checkbox"] {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+  
+
+}
+
+@media screen and (max-width: 480px) {
+   
+.div_place_game {
+    padding: 5px;
+}
+
+.title_game {
+    font-size: 18px;
+}
+
+.desc_game {
+    font-size: 12px;
+    color: white;
+}
+
+.price_game {
+    font-size: 16px;
+    color: var(--color);
+}
+
+.platform_game {
+    font-size: 12px;
+    color: var(--color-very-light);
+}
+
+.button_update {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #0077c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button_delete {
+    font-size: 14px;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+
+  }
+
+
+  
+}
+  
+

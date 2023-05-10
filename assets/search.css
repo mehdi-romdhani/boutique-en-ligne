@@ -1,0 +1,107 @@
+.searchMain {
+    background-color: var(--color-ultra-dark);
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.allGamesSearch {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#displayPaginationSearch {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4.3vw;
+    padding: 9vw 17vw;
+    color: var(--color-light);
+}
+
+.oneGame {
+    width: 47vw;
+    margin: 2.3vw 1.5vw;
+}
+
+.oneGame a {
+    text-decoration: none;
+    color: var(--color-very-light);
+    background-color: var(--color-ultra-dark);
+}
+
+.titrePrix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.oneGame img {
+    width: 47vw;
+    height: 32vw;
+    border-radius: 7px;
+    aspect-ratio: 5/3;
+    box-shadow: 10px 8px 18px rgba(0, 0, 0, 0.42);
+}
+
+.titrePrix > a {
+    background-color: var(--color-very-dark);
+    font-size: 4.3vw;
+    padding: 1% 4%;
+}
+
+.titleDesktopSearch {
+    display: none;
+}
+
+
+@media (min-width: 1020px) {
+
+    .allGamesSearch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        max-width: 1300px;
+        padding-top: 5vw;
+    }
+
+    .titleDesktopSearch {
+        display: block;
+    }
+
+    .titleMobileSearch {
+        display: none;
+    }
+
+    .oneGame, .oneGame img {
+        width: 24vw;
+        max-width: 350px;
+        max-height: 200px;
+    }
+
+    .oneGame img {
+        height: 13vw;
+    }
+
+    .titrePrix > a {
+        font-size: 1em;
+    }
+
+    #displayPaginationSearch {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        padding: 5vh 0;
+    }
+
+    #displayPaginationSearch > i, #displayPaginationSearch > p {
+        padding: 25px;
+    }
+
+}

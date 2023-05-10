@@ -1,0 +1,218 @@
+/*!*******************************ROOT*******************************!*/
+
+/*:root {*/
+/*    --color: #ff5400;*/
+/*    --color-link-hover: #ffa700;*/
+/*    --color-very-light: #b7b7b7;*/
+/*    --color-light: #999;*/
+/*    --color-medium-light: #6d6d6d;*/
+/*    --color-medium: #3d3d3d;*/
+/*    --color-medium-dark: #323232;*/
+/*    --color-dark: #272727;*/
+/*    --color-very-dark: #1d1d1d;*/
+/*    --color-ultra-dark: #101010;*/
+/*}*/
+
+/*!*******************************ALL PAGE*******************************!*/
+
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*body::-webkit-scrollbar{*/
+/*    display: none;*/
+/*}*/
+
+/*!*******************************ALL PRODUCTS*******************************!*/
+/*.image_game {*/
+/*    width: 150px;*/
+/*    height: auto;*/
+/*}*/
+
+/*.img-all-products {*/
+/*    width: 300px;*/
+/*    height: auto;*/
+/*}*/
+
+/*.changePage {*/
+/*    cursor: pointer;*/
+/*}*/
+/*!*******************************INDEX*******************************!*/
+
+/*.flex-released-games {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.display-new-released-games {*/
+/*    display: flex;*/
+/*    flex-wrap: nowrap;*/
+/*    justify-content: start!important;*/
+/*    overflow: auto;*/
+/*    -webkit-overflow-scrolling: touch;*/
+/*    padding: 1rem!important;*/
+/*    background-color: var(--color-medium-dark);*/
+/*}*/
+
+/*.display-new-released-games::-webkit-scrollbar{*/
+/*    display: none;*/
+/*}*/
+
+
+/*.new-released-game {*/
+/*    display: block;*/
+/*    max-width: 250px;*/
+/*    max-height: 150px;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    margin-left: 1rem;*/
+/*}*/
+
+/*.link-released-games {*/
+/*    text-decoration: none;*/
+/*    width: 75%;*/
+/*}*/
+
+/*.new-released-games-title-price {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    width: 15rem;*/
+/*    padding-top: 0.1rem;*/
+/*    align-items: baseline;*/
+/*}*/
+
+/*.new-released-text {*/
+/*    font-size: 1rem;*/
+/*    text-overflow: ellipsis;*/
+/*    overflow: hidden;*/
+/*    white-space: nowrap;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    color: var(--color-light);*/
+/*}*/
+
+/*.new-released-price {*/
+/*    font-size: 1.2rem;*/
+/*    width: 25%;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*.img-released-games {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 90%;*/
+/*    border-radius: 7px;*/
+/*    align-items: center;*/
+/*    overflow-clip-margin: content-box;*/
+/*    overflow: clip;*/
+
+/*}*/
+
+/*.carousel {*/
+/*    margin-bottom: -0.5rem;*/
+/*    position: relative;*/
+/*}*/
+
+/*#carousel-img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    aspect-ratio: 2/1;*/
+/*}*/
+
+/*.carousel #prev {*/
+/*    position:absolute;*/
+/*    top:calc(50% - 1em);*/
+/*    left: 0;*/
+/*    padding: 2%;*/
+/*    background-color: #323232;*/
+/*    border: none;*/
+/*    border-radius: 7px;*/
+/*}*/
+
+/*.carousel #next {*/
+/*    position:absolute;*/
+/*    top:calc(50% - 1em);*/
+/*    right: 0;*/
+/*    padding: 2%;*/
+/*    background-color: #323232;*/
+/*    border: none;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+
+/*#display-rand-games {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap!important;*/
+/*    justify-content: center;*/
+/*    background-color: var(--color-medium-dark);*/
+/*}*/
+
+/*.rand-game {*/
+/*    width: 35%;*/
+/*    margin: 1rem;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.rand-link {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.rand-text {*/
+/*    text-overflow: ellipsis;*/
+/*    overflow: hidden;*/
+/*    white-space: nowrap;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    width: 100%;*/
+/*    font-size: 1.1rem;*/
+/*}*/
+
+/*.display-title{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    padding: 1rem;*/
+/*    align-items: center;*/
+/*    background-color: var(--color-dark);*/
+/*}*/
+
+/*.title {*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*.link {*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    color: var(--color);*/
+/*}*/
+
+/*.rand-price {*/
+/*    color: #FFFFFF;*/
+/*    font-size: 1.1rem;*/
+/*}*/
+
+/*.rand-link {*/
+/*    text-decoration: none;*/
+/*    color: var(--color-medium-light);*/
+/*    font-size: 0.9rem;*/
+/*}*/
+
+/*.img-rand-games {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    border-radius: 7px;*/
+/*    aspect-ratio: 5/3;*/
+/*}*/
+
+/*@media screen and (min-width: 1000px) {*/
+
+/*    #carousel-img {*/
+/*        height: 40rem;*/
+/*        object-fit: fill;*/
+/*    }*/
+/*}*/
+
+
+
